@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">class </span><span class="s1">Empleado {</span>
+        <span class="s1">String nombre</span><span class="s0">;</span>
+        <span class="s0">double </span><span class="s1">salario</span><span class="s0">;</span>
+        <span class="s0">int </span><span class="s1">antiguedad</span><span class="s0">;</span>
+
+        <span class="s0">public </span><span class="s1">Empleado(String nombre</span><span class="s0">, double </span><span class="s1">salario</span><span class="s0">, int </span><span class="s1">antiguedad) {</span>
+                <span class="s0">this</span><span class="s1">.nombre = nombre</span><span class="s0">;</span>
+                <span class="s0">this</span><span class="s1">.salario = salario</span><span class="s0">;</span>
+                <span class="s0">this</span><span class="s1">.antiguedad = antiguedad</span><span class="s0">;</span>
+        <span class="s1">}</span>
+
+        <span class="s0">public void </span><span class="s1">Aumentos(</span><span class="s0">double </span><span class="s1">aumento) {</span>
+                <span class="s0">this</span><span class="s1">.salario += aumento</span><span class="s0">;</span>
+        <span class="s1">}</span>
+<span class="s1">}</span>
+
+<span class="s0">public class </span><span class="s1">Main {</span>
+        <span class="s0">public static void </span><span class="s1">main(String[] args) {</span>
+
+                <span class="s1">Empleado empleado1 = </span><span class="s0">new </span><span class="s1">Empleado(</span><span class="s2">&quot;Juan&quot;</span><span class="s0">, </span><span class="s3">3000</span><span class="s0">, </span><span class="s3">3</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">Empleado empleado2 = </span><span class="s0">new </span><span class="s1">Empleado(</span><span class="s2">&quot;María&quot;</span><span class="s0">, </span><span class="s3">4000</span><span class="s0">, </span><span class="s3">6</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">Empleado empleado3 = </span><span class="s0">new </span><span class="s1">Empleado(</span><span class="s2">&quot;Carlos&quot;</span><span class="s0">, </span><span class="s3">3500</span><span class="s0">, </span><span class="s3">8</span><span class="s1">)</span><span class="s0">;</span>
+                <span class="s1">Empleado empleado4 = </span><span class="s0">new </span><span class="s1">Empleado(</span><span class="s2">&quot;Laura&quot;</span><span class="s0">, </span><span class="s3">2500</span><span class="s0">, </span><span class="s3">2</span><span class="s1">)</span><span class="s0">;</span>
+
+                <span class="s1">Empleado[] empleados = {empleado1</span><span class="s0">, </span><span class="s1">empleado2</span><span class="s0">, </span><span class="s1">empleado3</span><span class="s0">, </span><span class="s1">empleado4}</span><span class="s0">;</span>
+
+                <span class="s0">double </span><span class="s1">aumento = </span><span class="s3">0.10</span><span class="s0">;</span>
+                <span class="s0">for </span><span class="s1">(Empleado empleado : empleados) {</span>
+                        <span class="s0">if </span><span class="s1">(empleado.antiguedad &gt; </span><span class="s3">5</span><span class="s1">) {</span>
+                                <span class="s1">empleado.Aumentos(empleado.salario * aumento)</span><span class="s0">;</span>
+                        <span class="s1">}</span>
+                <span class="s1">}</span>
+
+                <span class="s0">for </span><span class="s1">(Empleado empleado : empleados) {</span>
+                        <span class="s1">System.out.println(</span><span class="s2">&quot;Nombre: &quot; </span><span class="s1">+ empleado.nombre + </span><span class="s2">&quot; - Salario: &quot; </span><span class="s1">+ empleado.salario)</span><span class="s0">;</span>
+                <span class="s1">}</span>
+        <span class="s1">}</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
