@@ -1,0 +1,32 @@
+class Main {
+
+        public static void main(String[] args) {
+
+            Producto prod1 = new Producto();
+            prod1.precio = 30;
+            prod1.nombre = "Pantalon";
+            prod1.mostrarproducto();
+
+            Producto prod2 = new Producto();
+            prod2.precio = 40;
+            prod2.nombre = "camisa";
+            prod2.mostrarproducto();
+
+            Producto prod3 = new Producto();
+            prod3.precio = 100;
+            prod3.nombre = "aspiradora";
+            prod3.mostrarproducto();
+    }
+}
+
+
+public class Producto {
+
+    public String nombre;
+    public int precio;
+    public void mostrarproducto (){
+        System.out.println ("\nel nombre del producto es: " + nombre );
+        System.out.println ("\nel precio del producto es: usd" + precio);
+    }
+
+    }
